@@ -20,7 +20,7 @@ class Solution:
             elif val==')':
                 ct-=1
             if ct==0:
-                finansw+=stack[1:-1]
+                finansw+=st[1:-1]
                 st=[]
         
         return "".join(finansw)
