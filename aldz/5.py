@@ -6,7 +6,7 @@
 #   k (int): k  по величине элемент.
        
 # Returns:
-#     int: k по величине элемент в массиве.
+#     int: k по величине элемент в массиве
 
 class Solution:            
     def removeOuterParentheses(self, s: str) -> str:
