@@ -20,14 +20,10 @@ class Triangle:
     def is_valid(self):
         sides = [self.a, self.b, self.c]
         if all([isinstance(side,(int, float)) for side in sides]): 
-            if all ([side >= 0 for side in sides]):
-                return all([side > 0 for side in sides])
-
-
-
+            return all ([side > 0 for side in sides])
+            
 triangle = Triangle(6, 12, 13)
 print("Площадь треугольника:", round(triangle.square(),2))
-
 
 
 
