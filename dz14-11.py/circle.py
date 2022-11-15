@@ -15,10 +15,9 @@ class Circle:
         return pi * (self.radius ** 2)
 
     def is_valid(self):
-        sides = [self.radius]
-        if all([isinstance(side,(int, float)) for side in sides]):
-            if all ([side >= 0 for side in sides]):
-                return all([side > 0 for side in sides])
+        if isinstance(self.radius,(int,float)):
+            return self.radius > 0 
+
 
 circle = Circle(3)
 print("Площадь круга:", round (circle.area(),2))  
